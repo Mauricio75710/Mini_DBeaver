@@ -10,9 +10,9 @@ Maurico Castillo Oloarte
 Uriel Alejandro Tun Muñoz
 
 ## Fecha límite de entrega
-Fecha de entrega: Lunes, 2 de noviembre de 2026, a las 9:00   
+Lunes, 2 de noviembre de 2026, a las 9:00   
 ## Formato de entrega
-Formato de entrega: Repositorio de Github  
+Repositorio de Github  
 
 ## Instrucciones 
 Elabora, en equipos de máximo 4 integrantes una aplicación de escritorio en Java que realice las siguientes tareas:  
