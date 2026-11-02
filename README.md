@@ -40,5 +40,3 @@ Host: localhost
 Usuario: becario
 Password: FdI-its-5a
 
-Formato de entrega: Repositorio público de GitHub
-Fecha límite de entrega: Lunes, 2 de noviembre a las 9:00
