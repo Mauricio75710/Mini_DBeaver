@@ -1,6 +1,6 @@
 # Mini_DBeaver
 
-## Intregrantes: 
+## Intergrantes: 
 Cesar Enrique Uc Aguilar
 
 Pedro Alejandro Chavez Rivero
