@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.uacam.minidbeaver.mini_dbeaver.controllers.CrudController"
+            prefWidth="900"
+            prefHeight="620">
+
+    <stylesheets>
+        <URL value="@estilos.css"/>
+    </stylesheets>
+
+    <padding>
+        <Insets top="24" right="24" bottom="24" left="24"/>
+    </padding>
+
+    <top>
+        <VBox spacing="4">
+            <Label text="Datos locales" styleClass="titulo"/>
+            <Label fx:id="tableLabel" text="Tabla local:" styleClass="subtitulo"/>
+            <BorderPane.margin>
+                <Insets bottom="16"/>
+            </BorderPane.margin>
+        </VBox>
+    </top>
+
+    <center>
+        <TableView fx:id="dataTable"/>
+    </center>
+
+    <bottom>
+        <VBox spacing="8">
+            <BorderPane.margin>
+                <Insets top="16"/>
+            </BorderPane.margin>
+
+            <Label text="Editor SQL" styleClass="seccion"/>
+            <TextArea fx:id="sqlArea"
+                      prefRowCount="4"
+                      wrapText="true"
+                      promptText="CREATE, SELECT, INSERT, UPDATE o DELETE"/>
+
+            <HBox spacing="8">
+                <Button text="Ejecutar SQL"
+                        onAction="#ejecutarSql"
+                        styleClass="boton-principal"/>
+                <Button text="Actualizar" onAction="#refreshTable"/>
+                <Button text="Volver a tablas" onAction="#volverTablas"/>
+            </HBox>
+
+            <Label fx:id="statusLabel" text="Listo." styleClass="estado" wrapText="true"/>
+        </VBox>
+    </bottom>
+
+</BorderPane>

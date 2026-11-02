@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.uacam.minidbeaver.mini_dbeaver.controllers.TablasController"
+            prefWidth="640"
+            prefHeight="480">
+
+    <stylesheets>
+        <URL value="@estilos.css"/>
+    </stylesheets>
+
+    <padding>
+        <Insets top="24" right="24" bottom="24" left="24"/>
+    </padding>
+
+    <top>
+        <VBox spacing="4">
+            <Label text="Tablas del servidor" styleClass="titulo"/>
+            <Label text="Selecciona una tabla para descargar una copia local en SQLite."
+                   styleClass="subtitulo"/>
+            <BorderPane.margin>
+                <Insets bottom="16"/>
+            </BorderPane.margin>
+        </VBox>
+    </top>
+
+    <center>
+        <ListView fx:id="tablesList"/>
+    </center>
+
+    <bottom>
+        <VBox spacing="10">
+            <BorderPane.margin>
+                <Insets top="16"/>
+            </BorderPane.margin>
+
+            <Label fx:id="statusLabel" text="Cargando tablas..." styleClass="estado"/>
+
+            <HBox spacing="8">
+                <Button fx:id="downloadButton"
+                        text="Descargar tabla"
+                        onAction="#descargarTabla"
+                        styleClass="boton-principal"/>
+                <Button text="Actualizar" onAction="#cargarTablas"/>
+                <Button text="Desconectar" onAction="#desconectar"/>
+            </HBox>
+        </VBox>
+    </bottom>
+
+</BorderPane>

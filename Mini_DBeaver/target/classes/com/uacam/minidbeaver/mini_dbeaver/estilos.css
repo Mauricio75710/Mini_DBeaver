@@ -1,0 +1,65 @@
+/* Modo oscuro simple: fondo gris oscuro, un solo color de acento */
+.root {
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 13px;
+    -fx-background-color: #1e1f22;
+    -fx-base: #2b2d30;
+    -fx-control-inner-background: #2b2d30;
+    -fx-text-fill: #e4e6ea;
+}
+
+.label { -fx-text-fill: #e4e6ea; }
+.titulo    { -fx-font-size: 22px; -fx-font-weight: bold; }
+.subtitulo { -fx-text-fill: #8b9098; }
+.seccion   { -fx-font-weight: bold; -fx-padding: 8 0 0 0; }
+.estado    { -fx-text-fill: #8b9098; }
+
+.text-field, .password-field, .text-area, .list-view, .table-view {
+    -fx-background-color: #2b2d30;
+    -fx-text-fill: #e4e6ea;
+    -fx-prompt-text-fill: #6b7078;
+    -fx-border-color: #3e4147;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+.text-field, .password-field { -fx-padding: 8; }
+.text-area .content { -fx-background-color: #2b2d30; }
+.text-area { -fx-highlight-fill: #2f5f9e; }
+
+.text-field:focused, .password-field:focused, .text-area:focused {
+    -fx-border-color: #4a90e2;
+}
+
+.button {
+    -fx-background-color: #3a3d42;
+    -fx-text-fill: #e4e6ea;
+    -fx-background-radius: 4;
+    -fx-padding: 7 16;
+    -fx-cursor: hand;
+}
+.button:hover { -fx-background-color: #46494f; }
+
+.boton-principal { -fx-background-color: #4a90e2; -fx-text-fill: white; }
+.boton-principal:hover { -fx-background-color: #3b7fcf; }
+
+.list-cell, .table-row-cell, .table-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #e4e6ea;
+}
+.list-cell:filled:selected, .table-row-cell:filled:selected {
+    -fx-background-color: #2f5f9e;
+}
+.table-row-cell:filled:selected .table-cell { -fx-text-fill: white; }
+.list-cell:filled:selected { -fx-text-fill: white; }
+
+.table-view .column-header-background,
+.table-view .column-header,
+.table-view .filler { -fx-background-color: #34373c; }
+.table-view .column-header .label { -fx-text-fill: #e4e6ea; }
+
+.scroll-bar { -fx-background-color: transparent; }
+.scroll-bar .thumb { -fx-background-color: #4a4d53; -fx-background-radius: 4; }
+.scroll-bar .track, .scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+}
+.scroll-pane, .scroll-pane > .viewport { -fx-background-color: transparent; }

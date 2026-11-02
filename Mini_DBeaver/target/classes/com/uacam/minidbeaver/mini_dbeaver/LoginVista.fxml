@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.uacam.minidbeaver.mini_dbeaver.controllers.LoginController"
+      alignment="CENTER_LEFT"
+      spacing="10"
+      prefWidth="420"
+      prefHeight="520">
+
+    <stylesheets>
+        <URL value="@estilos.css"/>
+    </stylesheets>
+
+    <padding>
+        <Insets top="32" right="40" bottom="32" left="40"/>
+    </padding>
+
+    <Label text="Mini_DBeaver" styleClass="titulo"/>
+    <Label text="Conexión segura al servidor" styleClass="subtitulo"/>
+
+    <Label text="Conexión SSH" styleClass="seccion"/>
+    <TextField fx:id="hostField" promptText="Host SSH"/>
+    <TextField fx:id="userField" promptText="Usuario SSH"/>
+    <PasswordField fx:id="passwordField" promptText="Contraseña SSH"/>
+
+    <Label text="Acceso a MariaDB" styleClass="seccion"/>
+    <TextField fx:id="dbUserField" promptText="Usuario de MariaDB"/>
+    <PasswordField fx:id="dbPasswordField" promptText="Contraseña de MariaDB"/>
+    <TextField fx:id="databaseField" promptText="Base de datos"/>
+
+    <Button fx:id="connectButton"
+            text="Conectar"
+            onAction="#conectar"
+            maxWidth="Infinity"
+            styleClass="boton-principal">
+        <VBox.margin>
+            <Insets top="10"/>
+        </VBox.margin>
+    </Button>
+
+    <Label fx:id="statusLabel"
+           text="Ingresa tus datos para conectarte."
+           styleClass="estado"
+           wrapText="true"/>
+
+</VBox>

@@ -1,0 +1,8 @@
+module-info.class
+com\uacam\minidbeaver\mini_dbeaver\controllers\CrudController.class
+com\uacam\minidbeaver\mini_dbeaver\controllers\LoginController.class
+com\uacam\minidbeaver\mini_dbeaver\controllers\TablasController.class
+com\uacam\minidbeaver\mini_dbeaver\model\RemotoDbServicio.class
+com\uacam\minidbeaver\mini_dbeaver\Aplicacion.class
+com\uacam\minidbeaver\mini_dbeaver\model\LocalDbServicio.class
+com\uacam\minidbeaver\mini_dbeaver\model\SSHTunnelServicio.class
