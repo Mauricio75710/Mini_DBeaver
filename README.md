@@ -1,14 +1,20 @@
 # Mini_DBeaver
 
 ## Intregrantes: 
-Cesar Enrique Uc Aguilar 
-Pedro Alejandro Chavez Rivero 
-Maurico Castillo Oloarte 
+Cesar Enrique Uc Aguilar
+
+Pedro Alejandro Chavez Rivero
+
+Maurico Castillo Oloarte
+
 Uriel Alejandro Tun Muñoz
 
+## Fecha límite de entrega
 Fecha de entrega: Lunes, 2 de noviembre de 2026, a las 9:00 
+## Formato de entrega
 Formato de entrega: Repositorio de Github
 
+## Instrucciones 
 Elabora, en equipos de máximo 4 integrantes una aplicación de escritorio en Java que realice las siguientes tareas:
 Debe tener una pantalla de inicio de sesión, en la cual se deben poder colocar un host, nombre de usuario y contraseña
 Con las credenciales introducidas en el login, debe abrir un túnel SSH al host proporcionado, usando el usuario y contraseña.
